@@ -1,44 +1,38 @@
 {
-    "commerceSuiteVersion":"1811.5",
+    "commerceSuiteVersion":"1811.15",
     "extensions": [
-		
+		"commerceservicesbackoffice",
+		"solrfacetsearchbackoffice",
+		"solrserver",
+		"yacceleratorcockpits",
+		"yacceleratorinitialdata",
+		"yacceleratorstorefront",
+		"ycommercewebservices",
+		"electronicsstore",
+		"apparelstore",
+		"acceleratorwebservicesaddon",
+		"cmswebservices",
+		"smarteditwebservices",
+		"cmssmarteditwebservices",
+		"permissionswebservices",
+		"smarteditaddon",
+		"smartedit",
+		"cmssmartedit",
+	    "cmsbackoffice",
+        "previewwebservices",
+		"previewpersonalizationweb",
+        "personalizationcmsweb",
+        "personalizationsmartedit",
+        "personalizationpromotionssmartedit",
+        "personalizationsampledataaddon",
+        "personalizationpromotions",
+        "personalizationpromotionsweb",
+        "personalizationservicesbackoffice",
+        "personalizationpromotionsbackoffice",
+        "personalizationcmsbackoffice",
+        "personalizationsearchbackoffice",
+        "personalizationsearchsmartedit"
     ],
-    "useConfig": {
-        "properties": [
-            {
-                "location": "config/local.properties"
-            },
-            {
-                "location": "config/local-dev.properties",
-                "persona": "development"
-            },
-            {
-                "location": "config/local-prod.properties",
-                "persona": "production"
-            },
-            {
-                "location": "config/local-backoffice-prod.properties",
-                "persona": "production",
-                "aspect": "backoffice"
-            },
-            {
-                "location": "config/local-backoffice.properties",
-                "aspect": "backoffice"
-            }
-        ],
-        "extensions": {
-            "location": "config/localextensions.xml",
-            "exclude": [
-               
-            ]
-        },
-        "solr": {
-            "location": "[Solr custom folder]"
-        },
-        "languages" : {
-            "location": "_LANGUAGES_"
-        }
-},
 	"storefrontAddons": [
 		{
 		    "addon": "smarteditaddon",
