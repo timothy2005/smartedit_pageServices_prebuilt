@@ -65,7 +65,6 @@
         <sequential>
         
             <echo message="installing my npm stuff"/>
-            <repairnpmmacro/>
             <invokeNpmCustomWorkingDir arguments="install" workingDir="${ext.npmancillary.path}/resources/npm" />
 
             <if>
