@@ -117,6 +117,7 @@
             <echo message="installing my npm stuff"/>
             <repairnpmmacro/>
             <invokeNpmCustomWorkingDir arguments="install" workingDir="${ext.cmssmartedit.path}" />
+	    <invokeNpmCustomWorkingDir arguments="run build" workingDir="${ext.cmssmartedit.path}" />
 
             <if>
 				<available file="${ext.npmancillary.path}${file.separator}resources${file.separator}npm${file.separator}node_modules" type="dir"/>
