@@ -45,22 +45,6 @@
         <exclude name="smartedit-custom-build/generated/"/>
     </patternset>
 
-    <macrodef name="cmssmartedit_before_clean">
-        <sequential>
-            <if>
-				<available file="${ext.npmancillary.path}${file.separator}resources${file.separator}npm${file.separator}node_modules" type="dir"/>
-                <then>
-                    <delete dir="${ext.cmssmartedit.path}${file.separator}temp"/>
-                    <delete dir="${ext.cmssmartedit.path}${file.separator}jsTarget"/>
-                    <delete dir="${ext.cmssmartedit.path}${file.separator}web${file.separator}webroot${file.separator}css"/>
-                    <delete dir="${ext.cmssmartedit.path}${file.separator}web${file.separator}webroot${file.separator}cmssmartedit${file.separator}js"/>
-                    <unLinkSmarteditBundle target="${ext.cmssmartedit.path}"></unLinkSmarteditBundle>
-                    <removeNodeModulesSymlink path="${ext.cmssmartedit.path}"/>
-                </then>
-            </if>
-        </sequential>
-    </macrodef>
-
 <!-- copied from npmancillary/buildcallbacks.xml, target 'repairnpm' -->
     <!-- you can't call an ant target from a macro, but you can call other macros :) -->
     <macrodef name="repairnpmmacro">
@@ -111,6 +95,23 @@
             </if>
         </sequential>
     </macrodef>
+
+    <macrodef name="cmssmartedit_before_clean">
+        <sequential>
+            <if>
+				<available file="${ext.npmancillary.path}${file.separator}resources${file.separator}npm${file.separator}node_modules" type="dir"/>
+                <then>
+                    <delete dir="${ext.cmssmartedit.path}${file.separator}temp"/>
+                    <delete dir="${ext.cmssmartedit.path}${file.separator}jsTarget"/>
+                    <delete dir="${ext.cmssmartedit.path}${file.separator}web${file.separator}webroot${file.separator}css"/>
+                    <delete dir="${ext.cmssmartedit.path}${file.separator}web${file.separator}webroot${file.separator}cmssmartedit${file.separator}js"/>
+                    <unLinkSmarteditBundle target="${ext.cmssmartedit.path}"></unLinkSmarteditBundle>
+                    <removeNodeModulesSymlink path="${ext.cmssmartedit.path}"/>
+                </then>
+            </if>
+        </sequential>
+    </macrodef>
+
 
     <macrodef name="cmssmartedit_before_build">
         <sequential>
