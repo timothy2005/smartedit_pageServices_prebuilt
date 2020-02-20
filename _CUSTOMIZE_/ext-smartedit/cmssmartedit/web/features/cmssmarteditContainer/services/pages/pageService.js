@@ -65,7 +65,7 @@ angular.module('pageServiceModule', [
                 typeCode: pageTypeCode,
                 itemSearchParams: "defaultPage:true,pageStatus:ACTIVE",
                 currentPage: 0,
-                pageSize: 666
+                pageSize: 50
             });
             return cmsitemsRestService.get(extendedParams).then(function(primaryPages) {
                 return primaryPages.response;
