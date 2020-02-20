@@ -112,13 +112,11 @@
         </sequential>
     </macrodef>
 
-
     <macrodef name="cmssmartedit_before_build">
         <sequential>
             <echo message="installing my npm stuff"/>
             <repairnpmmacro/>
-            <invokeNpmCustomWorkingDir arguments="install" workingDir="${ext.cmssmartedit.path}" />
-	    <invokeNpmCustomWorkingDir arguments="build" workingDir="${ext.cmssmartedit.path}" />
+            <invokeNpmCustomWorkingDir arguments="install" workingDir="${ext.npmancillary.path}/resources/npm" />
 
             <if>
 				<available file="${ext.npmancillary.path}${file.separator}resources${file.separator}npm${file.separator}node_modules" type="dir"/>
