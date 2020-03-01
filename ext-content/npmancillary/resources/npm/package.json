@@ -79,7 +79,7 @@
     "xunit-viewer": "5.1.6"
   },
   "dependencies": {
-    "angular": "1.7.4",
+    "angular": "1.7.9",
     "angular-animate": "1.7.4",
     "angular-cookies": "1.7.4",
     "angular-mocks": "1.7.4",
