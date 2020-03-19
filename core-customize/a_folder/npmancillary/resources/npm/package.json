@@ -90,7 +90,7 @@
     "angular-translate": "2.18.1",
     "angular-ui-bootstrap": "2.5.6",
     "angular-ui-tree": "2.22.6",
-    "ckeditor": "4.10.0",
+    "ckeditor": "4.12.1",
     "clean-npm-tmp": "1.1.2",
     "crypto-js": "3.1.9-1",
     "element-resize-detector": "1.1.14",
